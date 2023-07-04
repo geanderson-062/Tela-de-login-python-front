@@ -1,5 +1,6 @@
 #importando a lib
 import customtkinter
+from tkinter import * 
 
 #alterando a tematica do sistema
 customtkinter.set_appearance_mode ("dark")
@@ -9,7 +10,16 @@ customtkinter.set_default_color_theme("green") # outro thema dark-blue
 janela= customtkinter.CTk()
 
 #definindo tamanho da janela
-janela.geometry("500x300")
+janela.geometry("700x400")
+
+#definindo o titulo do sistema
+janela.title("Sistema de login")
+
+#trocando o icone do sistema
+janela.iconbitmap("icone.ico")
+
+#impedindo reajuste da janela evitando que o usuario quebre a janela 
+janela.resizable(False, False)
 
 #definindo uma ação para o botão executar 
 def clique(): 
